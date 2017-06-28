@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=SCFqt
+Comment=Speriamo che funzioni
+GenericName=SCFqt
+Exec=SCFqt
+Icon=scfqt
+Categories=Office;Database;
+Type=Application
