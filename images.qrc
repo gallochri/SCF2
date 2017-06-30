@@ -1,9 +1,15 @@
 <RCC>
     <qresource prefix="/icon">
-        <file>images/application-exit.png</file>
-        <file>images/document-import.png</file>
-        <file>images/logo.png</file>
-        <file>images/QtIcon.png</file>
-        <file>images/tools-wizard.png</file>
+        <file>images/icon/application-exit.png</file>
+        <file>images/icon/document-import.png</file>
+        <file>images/icon/logo.png</file>
+        <file>images/icon/QtIcon.png</file>
+        <file>images/icon/tools-wizard.png</file>
+    </qresource>
+    <qresource prefix="/watermark">
+        <file>images/watermark/yattaman.jpg</file>
+    </qresource>
+    <qresource prefix="/wallpaper">
+        <file>images/wallpaper/yattaman.jpg</file>
     </qresource>
 </RCC>
