@@ -31,9 +31,21 @@ Fill in the fields on the next wizard page and try the connection to the databas
     </item>
    </layout>
   </widget>
-  <widget class="QWizardPage" name="dbConfigPage"/>
+  <widget class="QWizardPage" name="DbConfigPage">
+   <property name="title">
+    <string>Database configuration</string>
+   </property>
+   <property name="subTitle">
+    <string>Specify information on how to connect to db</string>
+   </property>
+   <property name="LogoPixmap" stdset="0">
+    <pixmap resource="images.qrc">:/icon/images/logo.png</pixmap>
+   </property>
+  </widget>
   <widget class="QWizardPage" name="conclusionPage"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
  <connections/>
 </ui>

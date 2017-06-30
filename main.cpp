@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     //Test DB connection and start wizard if necessary
     if (!conf.createConnection()){
         qDebug() << __func__ << ":Connection problem!";
-//        mainWin->startWizard(mainWin);
+        mainWin->startWizard(mainWin);
     } else {
         qDebug() << __func__ <<":Connection successfull!";
     }

@@ -12,3 +12,9 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::startWizard(MainWindow *mainWin)
+{
+    Wizard *wiz = new Wizard(mainWin);
+    wiz->show();
+}

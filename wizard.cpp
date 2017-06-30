@@ -6,6 +6,7 @@ Wizard::Wizard(QWidget *parent) :
     ui(new Ui::Wizard)
 {
     ui->setupUi(this);
+    setWindowTitle(QString(APP_NAME).replace("_"," "));
 }
 
 Wizard::~Wizard()
