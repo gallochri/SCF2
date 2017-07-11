@@ -50,10 +50,13 @@ Fill in the fields on the next wizard page and try the connection to the databas
       <property name="text">
        <string>Database Status:</string>
       </property>
+      <property name="buddy">
+       <cstring>databaseStatusResult</cstring>
+      </property>
      </widget>
     </item>
     <item row="10" column="3">
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="testConnection">
       <property name="text">
        <string>&amp;Test</string>
       </property>
@@ -64,12 +67,18 @@ Fill in the fields on the next wizard page and try the connection to the databas
       <property name="text">
        <string>User name:</string>
       </property>
+      <property name="buddy">
+       <cstring>usernameLineEdit</cstring>
+      </property>
      </widget>
     </item>
     <item row="5" column="0">
      <widget class="QLabel" name="databaseLabel">
       <property name="text">
        <string>Database name:</string>
+      </property>
+      <property name="buddy">
+       <cstring>databaseLineEdit</cstring>
       </property>
      </widget>
     </item>
@@ -78,12 +87,18 @@ Fill in the fields on the next wizard page and try the connection to the databas
       <property name="text">
        <string>Database driver:</string>
       </property>
+      <property name="buddy">
+       <cstring>driverComboBox</cstring>
+      </property>
      </widget>
     </item>
     <item row="10" column="0">
      <widget class="QLabel" name="connectionStatusLabel">
       <property name="text">
        <string>Connection status:</string>
+      </property>
+      <property name="buddy">
+       <cstring>connectionStausResult</cstring>
       </property>
      </widget>
     </item>
@@ -92,10 +107,16 @@ Fill in the fields on the next wizard page and try the connection to the databas
       <property name="text">
        <string>Hostname:</string>
       </property>
+      <property name="buddy">
+       <cstring>hostnameLineEdit</cstring>
+      </property>
      </widget>
     </item>
     <item row="11" column="3">
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="createDB">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="text">
        <string>&amp;Create DB</string>
       </property>
@@ -113,6 +134,9 @@ Fill in the fields on the next wizard page and try the connection to the databas
       <property name="text">
        <string>Password:</string>
       </property>
+      <property name="buddy">
+       <cstring>passwordLineEdit</cstring>
+      </property>
      </widget>
     </item>
     <item row="8" column="1" colspan="2">
@@ -120,16 +144,31 @@ Fill in the fields on the next wizard page and try the connection to the databas
       <property name="echoMode">
        <enum>QLineEdit::Password</enum>
       </property>
+      <property name="placeholderText">
+       <string>password</string>
+      </property>
      </widget>
     </item>
     <item row="7" column="1" colspan="2">
-     <widget class="QLineEdit" name="usernameLineEdit"/>
+     <widget class="QLineEdit" name="usernameLineEdit">
+      <property name="placeholderText">
+       <string>user</string>
+      </property>
+     </widget>
     </item>
     <item row="5" column="1" colspan="2">
-     <widget class="QLineEdit" name="databaseLineEdit"/>
+     <widget class="QLineEdit" name="databaseLineEdit">
+      <property name="placeholderText">
+       <string>my_database</string>
+      </property>
+     </widget>
     </item>
     <item row="3" column="1" colspan="2">
-     <widget class="QLineEdit" name="hostnameLineEdit"/>
+     <widget class="QLineEdit" name="hostnameLineEdit">
+      <property name="placeholderText">
+       <string>www.example.com</string>
+      </property>
+     </widget>
     </item>
     <item row="0" column="1" colspan="2">
      <widget class="QComboBox" name="driverComboBox"/>
@@ -144,6 +183,18 @@ Fill in the fields on the next wizard page and try the connection to the databas
   </widget>
   <widget class="QWizardPage" name="conclusionPage"/>
  </widget>
+ <tabstops>
+  <tabstop>driverComboBox</tabstop>
+  <tabstop>hostnameLineEdit</tabstop>
+  <tabstop>databaseLineEdit</tabstop>
+  <tabstop>usernameLineEdit</tabstop>
+  <tabstop>passwordLineEdit</tabstop>
+  <tabstop>connectionStausResult</tabstop>
+  <tabstop>databaseStatusResult</tabstop>
+  <tabstop>showPasswordCheck</tabstop>
+  <tabstop>testConnection</tabstop>
+  <tabstop>createDB</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

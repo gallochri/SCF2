@@ -15,6 +15,12 @@ public:
     explicit Wizard(QWidget *parent = 0);
     ~Wizard();
 
+private slots:
+
+    void on_driverComboBox_currentIndexChanged(int index);
+
+    void on_showPasswordCheck_stateChanged(int arg1);
+
 private:
     Ui::Wizard *ui;
 };
