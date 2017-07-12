@@ -33,27 +33,11 @@ Wizard::Wizard(QWidget *parent) :
     {
         ui->driverComboBox->setCurrentIndex(1);
     }
+    //Set form fields
     ui->hostnameLineEdit->setText(host.isEmpty() ? "" : host);
-/**    //Set hostname
-    if (!host.isEmpty())
-    {
-        ui->hostnameLineEdit->setText(host);
-    }
-**/
-    //Set database name
-    if (!dbs.isEmpty()){
-        ui->databaseLineEdit->setText(dbs);
-    }
-
-    //Set user name
-    if (!user.isEmpty()){
-        ui->usernameLineEdit->setText(user);
-    }
-
-    //Set password
-    if (!pass.isEmpty()){
-        ui->passwordLineEdit->setText(pass);
-    }
+    ui->databaseLineEdit->setText(dbs.isEmpty() ? "" : dbs);
+    ui->usernameLineEdit->setText(user.isEmpty() ? "" : user);
+    ui->passwordLineEdit->setText(pass.isEmpty() ? "" : pass);
 
     /**
     registerField("driver",ui->driverComboBox);
@@ -84,7 +68,6 @@ void Wizard::on_driverComboBox_currentIndexChanged(int index)
         ui->passwordLineEdit->setEnabled(1);
         ui->showPasswordCheck->setEnabled(1);
     }
-
 }
 
 void Wizard::on_showPasswordCheck_stateChanged(int arg1)
