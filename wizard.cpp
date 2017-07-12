@@ -33,13 +33,13 @@ Wizard::Wizard(QWidget *parent) :
     {
         ui->driverComboBox->setCurrentIndex(1);
     }
-
-    //Set hostname
+    ui->hostnameLineEdit->setText(host.isEmpty() ? "" : host);
+/**    //Set hostname
     if (!host.isEmpty())
     {
         ui->hostnameLineEdit->setText(host);
     }
-
+**/
     //Set database name
     if (!dbs.isEmpty()){
         ui->databaseLineEdit->setText(dbs);
