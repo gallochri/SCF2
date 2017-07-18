@@ -21,6 +21,8 @@ private slots:
 
     void on_showPasswordCheck_stateChanged(int arg1);
 
+    void on_testConnection_pressed();
+
 private:
     Ui::Wizard *ui;
 };

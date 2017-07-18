@@ -98,7 +98,7 @@ Fill in the fields on the next wizard page and try the connection to the databas
        <string>Connection status:</string>
       </property>
       <property name="buddy">
-       <cstring>connectionStausResult</cstring>
+       <cstring>connectionStatusResult</cstring>
       </property>
      </widget>
     </item>
@@ -174,7 +174,7 @@ Fill in the fields on the next wizard page and try the connection to the databas
      <widget class="QComboBox" name="driverComboBox"/>
     </item>
     <item row="10" column="1" colspan="2">
-     <widget class="QLineEdit" name="connectionStausResult"/>
+     <widget class="QLineEdit" name="connectionStatusResult"/>
     </item>
     <item row="11" column="1" colspan="2">
      <widget class="QLineEdit" name="databaseStatusResult"/>
@@ -189,7 +189,7 @@ Fill in the fields on the next wizard page and try the connection to the databas
   <tabstop>databaseLineEdit</tabstop>
   <tabstop>usernameLineEdit</tabstop>
   <tabstop>passwordLineEdit</tabstop>
-  <tabstop>connectionStausResult</tabstop>
+  <tabstop>connectionStatusResult</tabstop>
   <tabstop>databaseStatusResult</tabstop>
   <tabstop>showPasswordCheck</tabstop>
   <tabstop>testConnection</tabstop>
