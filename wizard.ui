@@ -174,10 +174,39 @@ Fill in the fields on the next wizard page and try the connection to the databas
      <widget class="QComboBox" name="driverComboBox"/>
     </item>
     <item row="10" column="1" colspan="2">
-     <widget class="QLineEdit" name="connectionStatusResult"/>
+     <widget class="QLineEdit" name="connectionStatusResult">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
     </item>
     <item row="11" column="1" colspan="2">
-     <widget class="QLineEdit" name="databaseStatusResult"/>
+     <widget class="QLineEdit" name="databaseStatusResult">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
