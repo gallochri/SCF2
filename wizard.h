@@ -23,8 +23,6 @@ private slots:
 
     void on_testConnection_pressed();
 
-    void on_databaseStatusResult_editingFinished();
-
 private:
     Ui::Wizard *ui;
 };
